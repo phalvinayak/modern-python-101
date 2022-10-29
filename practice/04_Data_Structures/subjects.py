@@ -13,3 +13,29 @@ Info:
 -----
 Tuple also start from index 0
 """
+subjects: tuple[str, str, str] = ("Math", "Science", "History")
+
+# ---------------------------------------------------------------------
+# Louis wants to count his subjects
+# ---------------------------------------------------------------------
+print(f"\nNo of Subjects {len(subjects)}")
+
+
+# ---------------------------------------------------------------------
+# Louis wants to know all the subjects name
+# ---------------------------------------------------------------------
+print(f"\nAvailalbe subjects are {subjects}")
+for subject in subjects:
+    print(subject)
+
+# ---------------------------------------------------------------------
+# Louis wants to know his second subject name
+# ---------------------------------------------------------------------
+print(f"\nSecond subject is: {subjects[1]}")
+
+# ---------------------------------------------------------------------
+# School wants Louis to take another 3 subject to get gull credits
+# ---------------------------------------------------------------------
+additionalSubjects: tuple[str, str, str] = ("English", "Python", "Physics")
+allSubjects = subjects + additionalSubjects
+print(f"\nAll Subjects: {allSubjects}")
